@@ -1,13 +1,13 @@
 import Dice from "./Dice";
 
 
-function Board({ name, color, gameHistory}) {
+function Board({ name, color, gameHistory, className=''}) {
 
   const num = gameHistory[gameHistory.length - 1] || 1;
   const sum = gameHistory.reduce((a,b) => a + b, 0);
 
   return (
-    <div>
+    <div className={className}>
       <h2>{name}</h2>
       <Dice color={color} num={num} />
       <h2>총점</h2>
