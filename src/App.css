@@ -27,4 +27,7 @@
 .App .App-board {
   width: 30%;
   margin: 20px;
+  padding: 50px;
+  background-color: rgb(39, 43, 56);
+  border-radius: 10px;
 }
